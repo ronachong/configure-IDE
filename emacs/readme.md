@@ -8,4 +8,5 @@ https://www.emacswiki.org/emacs/InitFile
 https://www.gnu.org/software/emacs/manual/html_node/emacs/Lisp-Libraries.html
 
 Specifically relevant for 80-col:
+https://github.com/alpaker/Fill-Column-Indicator
 https://www.emacswiki.org/emacs/ColumnMarker
