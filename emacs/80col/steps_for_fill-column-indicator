@@ -1,0 +1,25 @@
+Fill Column Indicator fills column 80. The following instructions are
+for a new vagrant environment:
+
+clone this repo down to vagrant home:
+git clone etc.
+
+create .emacs.d folder (doesn't exist by default in new vagrant?)
+mkdir .emacs.d
+
+open emacs init file:
+C-x C-f ~/.emacs.d/init.el RET
+
+edit into emacs init file:
+;; adds 'emacslibs' directory to front of 'load-path' var
+;; this dir contains a lisp library for Fill Column Indicator
+(add-to-list 'load-path "/home/vagrant/configure-IDE/emacs/emacslibs") 
+
+;; include Fill Column Indicator lib (see https://github.com/alpaker/Fill-Column-Indicator)
+(require 'fill-column-indicator)
+
+--------------
+ALTERNATIVELY:
+copy /home/vagrant/configure-IDE/emacs/init.el to ~/.emacs.d/init.el
+This will set the init file to the version contained in this repo
+(which includes configurations for Fill Column Indicator).

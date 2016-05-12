@@ -1,0 +1,26 @@
+Note: Column Marker allows you to "interactively" highlight columns
+using certain hot-keys and configurations. But it doesn't auto-fill
+a column like Fill Column Indicator.
+
+--debug-init--debug-initclone this repo down to vagrant home:
+git clone etc.
+
+create .emacs.d folder (doesn't exist by default in new vagrant?)
+mkdir .emacs.d
+
+open emacs init file:
+C-x C-f ~/.emacs.d/init.el RET
+
+edit into emacs init file:
+;; adds 'emacslibs' directory to front of 'load-path' var
+;; this dir contains a lisp library for ColumnMarker
+(add-to-list 'load-path "/home/vagrant/configure-IDE/emacs/emacslibs") 
+
+;; include ColumnMarker lib (see https://www.emacswiki.org/emacs/ColumnMarker)
+(require 'column-marker)
+
+;; highlight col 80 in foo mode (not sure what foo mode rly is yet)
+(add-hook 'foo-mode-hook (lambda () (interactive) (column-marker-1 80)))
+
+;; set 'C-c m' to interactively highlight with 'column-marker-1-face'
+(global-set-key [?\C-c ?m] 'column-marker-1)
