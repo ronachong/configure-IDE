@@ -55,11 +55,11 @@
 
 ;;; Column Marker
 ;; include Column Marker lib (see https://www.emacswiki.org/emacs/ColumnMarker)
-(require 'column-marker)
+;;(require 'column-marker)
 
 ;; highlight col 80 in foo mode (not sure what foo mode rly is yet)
-(add-hook 'emacs-lisp-mode-hook (lambda ()
-    (interactive) (column-marker-1 80)))
+;;(add-hook 'emacs-lisp-mode-hook (lambda ()
+;;    (interactive) (column-marker-1 80)))
 
 ;; set 'C-c m' to interactively highlight with 'column-marker-1-face'
-(global-set-key [?\C-c ?m] 'column-marker-1)
+;;(global-set-key [?\C-c ?m] 'column-marker-1)
