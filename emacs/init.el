@@ -36,7 +36,7 @@
 ;;; Personal Libraries
 ;; adds 'emacslibs' directory to front of 'load-path' var
 ;; this dir contains lisp libraries for Column Marker, Fill Column Indicator
-(add-to-list 'load-path "/home/vagrant/configure-IDE/emacs/emacslibs")
+(add-to-list 'load-path "/root/configure-IDE/emacs/emacslibs")
 
 
 ;;; Fill Column Indicator
